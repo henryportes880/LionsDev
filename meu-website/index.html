@@ -1,58 +1,70 @@
-//<html><body><h1>Projeto do Henry</h1></body></html>
-//mudou ai
-<!DOCTYPE html> 
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Apresentação | Henry Portes</title>
-    <link rel="stylesheet" href="../includes/style.css">
+    <title>Projeto do Henry | Lions Dev</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: #1e1e1e;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid #867ca5;
+            text-align: center;
+            max-width: 350px;
+        }
+        h1 { color: #ffffff; margin-bottom: 10px; }
+        .btn-jogar {
+            background-color: #7362ac4f;
+            color: #ffffff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+        .btn-jogar:hover {
+            background-color: #12063b;
+            transform: scale(1.05);
+        }
+        .badge {
+            display: inline-block;
+            background: #333;
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <a href="../index.php" class="btn-voltar">← Voltar ao Repositório</a>
-<header class="hub-header">
-    <div class="container">
-        <div class="header-acoes">
-        </div>
-        <h1>Apresentação Pessoal</h1>
-        <p class="tagline">Aula 00 - Estrutura Semântica</p>
-    </div>
-</header>
 
-    <main class="container">
-        <article class="card">
-            
-            <div style="text-align: center; margin-bottom: 25px;">
-                <img src="../imgs/henry.jpg" alt="Minha Foto" class="hero-avatar" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border);">
-            </div>
-
-            <section class="biografia">
-                <h2 class="titulo-sessao">Sobre mim</h2>
-                <p>
-                    Olá! Meu nome é <strong>Henry Rafael Ribeiro Portes</strong>, estou no terceiro ano do <strong>Instituto Federal do Paraná (IFPR)</strong>. 
-                    Tenho 17 anos e um grande interesse em tecnologia, programação e desenvolvimento web. 
-                    Gosto de aprender coisas novas e evoluir constantemente.
-                </p>
-            </section>
-
-            <div class="tags" style="margin-top: 20px;">
-                <span class="tag">HTML5</span>
-                <span class="tag">CSS3</span>
-                <span class="tag">PHP</span>
-                <span class="tag">IFPR</span>
-            </div>
-        </article>
+    <div class="card">
+        <h1>Projeto do Henry</h1>
+        <p>Estudante focado em <strong>Node.js</strong></p>
+        <button class="btn-jogar" onclick="jogar()">Começar Jogo</button>
+        <div class="badge">Lions Dev 🦁</div>
         
-        <div style="text-align: center; margin-top: 30px;">
-            <a href="../01_php-intro/index.php" class="btn">Acessar Portfólio Completo</a>
+        <p style="margin-top: 20px;">Construindo o futuro com JavaScript no lado do servidor.</p>
+        
+        <div class="footer">
+            © 2024 - Desenvolvido com por Henry Portes
         </div>
-    </main>
-
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2026 Henry Portes — DWII</p>
-        </div>
-    </footer>
-
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
